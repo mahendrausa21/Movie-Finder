@@ -88,4 +88,4 @@ Integrated MySQL to fetch & display movie + theater + showtime details
 
 Mahendra Usirikayala
 📌 2027 Passout | Aspiring SDE | Java & Spring Boot Enthusiast
-mahendrausirikayala@gamil.com
+mahendrausirikayala@gamil.com.
