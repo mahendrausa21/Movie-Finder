@@ -13,7 +13,7 @@ A simple Spring Boot web application to manage **Movies, Theaters, and Showtimes
 ---
 
 ## 🏗️ Project Structure
-```plaintext
+```
 MovieFinder_Project/
 │── src/
 │   ├── main/
@@ -31,6 +31,7 @@ MovieFinder_Project/
 ├── pom.xml                        # Maven dependencies
 ├── mvnw / mvnw.cmd                # Maven wrapper
 └── README.md                      # Project Documentation
+---
 
 ⚙️ Tech Stack
 
@@ -50,9 +51,6 @@ git clone https://github.com/mahendrausa21/Movie-Finder.git
 cd Movie-Finder
 
 
----
 
-👉 Just replace your current README content with the above and commit it.  
-On GitHub, the **Project Structure** will now appear beautifully formatted like a tree.  
 
-Do you want me to also add a **Workflow section (Entities → Repository → Service → Con
+
