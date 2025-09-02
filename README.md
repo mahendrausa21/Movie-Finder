@@ -1,31 +1,28 @@
-🎬 Movie Finder
+# 🎬 Movie Finder
 
-A Spring Boot + Thymeleaf + MySQL web application that helps users find movies, theaters, and showtimes.
-This project demonstrates Spring Boot MVC architecture, Spring Data JPA, and Thymeleaf templating engine.
+Movie Finder is a **Spring Boot + Thymeleaf web application** that allows users to view movies, theaters, and showtimes stored in a MySQL database. It follows a clean layered architecture using **Spring Data JPA**, **Service layer**, and **MVC Controller**.
 
-🚀 Features
+---
 
-🎥 Manage Movies, Theaters, and Showtimes
+## 🚀 Features
+- View movies, theaters, and showtimes  
+- Uses **Spring Boot + Thymeleaf** for UI rendering  
+- **Spring Data JPA** for database interaction  
+- **MVC architecture** with Controller, Service, Repository layers  
+- Bootstrap-based **responsive UI**  
 
-📅 Display movies with show date & time
+---
 
-🗄️ Integrated with MySQL database using Spring Data JPA
+## 🛠️ Tech Stack
+- **Backend:** Java, Spring Boot, Spring MVC, Spring Data JPA  
+- **Frontend:** Thymeleaf, Bootstrap, HTML, CSS  
+- **Database:** MySQL  
+- **Build Tool:** Maven  
 
-🌐 Web interface built with Thymeleaf + Bootstrap
+---
 
-🏗️ Follows layered architecture: Entity → Repository → Service → Controller → View
-
-🛠️ Tech Stack
-
-Backend: Java, Spring Boot, Spring Data JPA
-
-Frontend: Thymeleaf, Bootstrap, HTML, CSS
-
-Database: MySQL
-
-Build Tool: Maven
-
-📂 Project Structure
+## 📂 Project Structure
+``
 MovieFinder_Project/
 │── src/main/java/springboot/mvc/MovieFinder
 │   ├── Controller/         # Web controllers
@@ -40,52 +37,30 @@ MovieFinder_Project/
 │
 │── pom.xml                # Maven dependencies
 │── README.md              # Project documentation
-
 ⚙️ Setup & Run
+Clone the repository
 
-Clone the repo
-
+bash
+Copy code
 git clone https://github.com/mahendrausa21/Movie-Finder.git
 cd Movie-Finder
+Configure Database
+Update src/main/resources/application.properties with your MySQL credentials:
 
-
-Configure MySQL
-Update src/main/resources/application.properties with your DB credentials:
-
-spring.datasource.url=jdbc:mysql://localhost:3306/moviedb
+properties
+Copy code
+spring.datasource.url=jdbc:mysql://localhost:3306/movie_db
 spring.datasource.username=root
 spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
-
-
 Run the application
 
+bash
+Copy code
 mvn spring-boot:run
-
-
 Access in browser
 Open 👉 http://localhost:8080
 
-📸 Screenshots
-
-(You can add screenshots later once UI is ready)
-
-📖 Workflow Explanation
-
-Created Entities (Movie, Theatre, Showtime) mapped with JPA
-
-Defined Repositories (JpaRepository) for DB operations
-
-Built a Service layer for business logic
-
-Implemented WebController to handle requests & responses
-
-Designed UI using Thymeleaf templates (index.html) with Bootstrap
-
-Integrated MySQL to fetch & display movie + theater + showtime details
 
 👨‍💻 Author
-
 Mahendra Usirikayala
-📌 2027 Passout | Aspiring SDE | Java & Spring Boot Enthusiast
-mahendrausirikayala@gamil.com.
