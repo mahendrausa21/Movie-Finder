@@ -1,66 +1,53 @@
-# 🎬 Movie Finder
+# 🎬 MovieFinder Project
 
-Movie Finder is a **Spring Boot + Thymeleaf web application** that allows users to view movies, theaters, and showtimes stored in a MySQL database. It follows a clean layered architecture using **Spring Data JPA**, **Service layer**, and **MVC Controller**.
+A simple Spring Boot web application to manage **Movies, Theaters, and Showtimes** using **Spring Data JPA** and **Thymeleaf**.
 
 ---
 
 ## 🚀 Features
-- View movies, theaters, and showtimes  
-- Uses **Spring Boot + Thymeleaf** for UI rendering  
-- **Spring Data JPA** for database interaction  
-- **MVC architecture** with Controller, Service, Repository layers  
-- Bootstrap-based **responsive UI**  
+- Add and manage Movies, Theaters, and Showtimes
+- Display all show details (Movie, Theater, Date, Time) on homepage
+- Integrated with **Spring Data JPA** for database operations
+- **Thymeleaf templates** for dynamic rendering
+- Bootstrap-styled frontend for responsive UI
 
 ---
 
-## 🛠️ Tech Stack
-- **Backend:** Java, Spring Boot, Spring MVC, Spring Data JPA  
-- **Frontend:** Thymeleaf, Bootstrap, HTML, CSS  
-- **Database:** MySQL  
-- **Build Tool:** Maven  
-
----
-
-## 📂 Project Structure
-``
+## 🏗️ Project Structure
 MovieFinder_Project/
-│── src/main/java/springboot/mvc/MovieFinder
-│   ├── Controller/         # Web controllers
-│   ├── Model/              # Entities (Movie, Theatre, Showtime)
-│   ├── Repository/         # JPA Repositories
-│   ├── Service/            # Business logic
-│   └── MovieFinderApplication.java
+│── src/
+│ ├── main/
+│ │ ├── java/springboot/mvc/MovieFinder/
+│ │ │ ├── Controller/ # Web Controllers
+│ │ │ ├── Model/ # Entities (Movie, Theater, Showtime)
+│ │ │ ├── Repository/ # JPA Repositories
+│ │ │ ├── Service/ # Business Logic
+│ │ │ └── MovieFinderApplication.java # Main Application
+│ │ ├── resources/
+│ │ │ ├── templates/ # Thymeleaf HTML files (index.html)
+│ │ │ └── application.properties
+│ └── test/ # Unit tests
 │
-│── src/main/resources/
-│   ├── application.properties  # DB Configuration
-│   └── templates/index.html    # Thymeleaf template
-│
-│── pom.xml                # Maven dependencies
-│── README.md              # Project documentation
-⚙️ Setup & Run
-Clone the repository
-
-bash
-Copy code
-git clone https://github.com/mahendrausa21/Movie-Finder.git
-cd Movie-Finder
-Configure Database
-Update src/main/resources/application.properties with your MySQL credentials:
-
-properties
-Copy code
-spring.datasource.url=jdbc:mysql://localhost:3306/movie_db
-spring.datasource.username=root
-spring.datasource.password=yourpassword
-spring.jpa.hibernate.ddl-auto=update
-Run the application
-
-bash
-Copy code
-mvn spring-boot:run
-Access in browser
-Open 👉 http://localhost:8080
+├── pom.xml # Maven dependencies
+├── mvnw / mvnw.cmd # Maven wrapper
+└── README.md # Project Documentation
 
 
-👨‍💻 Author
-Mahendra Usirikayala
+
+---
+
+## ⚙️ Tech Stack
+- **Backend:** Java, Spring Boot
+- **Frontend:** Thymeleaf, Bootstrap
+- **Database:** MySQL (via Spring Data JPA)
+- **Build Tool:** Maven
+
+---
+
+## 🛠️ Setup Instructions
+
+1. Clone the repository:
+   
+   git clone https://github.com/mahendrausa21/Movie-Finder.git
+
+
