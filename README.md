@@ -31,8 +31,7 @@ MovieFinder_Project/
 ├── pom.xml                        # Maven dependencies
 ├── mvnw / mvnw.cmd                # Maven wrapper
 └── README.md                      # Project Documentation
----
-
+```
 ⚙️ Tech Stack
 
 Backend: Java, Spring Boot
@@ -51,6 +50,15 @@ git clone https://github.com/mahendrausa21/Movie-Finder.git
 cd Movie-Finder
 
 
+Run the application:
+
+mvn spring-boot:run
 
 
+Access the app at:
+👉 http://localhost:8080/
+
+👨‍💻 Author
+Mahendra Usirikayala
+mahendrausirikayala@gmail.com
 
